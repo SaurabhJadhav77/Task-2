@@ -1,0 +1,19 @@
+<p>course works!</p>
+
+<button (click)="display()"> Course details</button>
+<table *ngIf="arr1"    border="2px" cellpadding="15px" style="background-color: cadetblue;">
+<tr>
+    <th>Course id</th>
+    <th>Course name</th>
+    <th>Course duration</th>
+    <th>Course Fees</th>
+</tr>
+<tr *ngFor="let i of arr1">
+    <td>{{i.cid}}</td>
+    <td>{{i.cname}}</td>
+    <td>{{i.cduration}}</td>
+    <td>{{i.cfee}}</td>
+
+</tr>
+
+</table>

@@ -1,0 +1,54 @@
+import { Component, OnInit } from '@angular/core';
+import { Student2Component } from '../student2/student2.component';
+
+@Component({
+  selector: 'app-course',
+  templateUrl: './course.component.html',
+  styleUrls: ['./course.component.css']
+})
+export class CourseComponent implements OnInit {
+arr1:course2[];
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+display(){
+  
+  let str1=new course2();
+  str1.cid=1;
+  str1.cname="Java";
+  str1.cduration="10 hrs";
+  str1.cfee=15000;
+
+  let str2=new course2();
+  str2.cid=2;
+  str2.cname=".NET";
+  str2.cduration="8 hrs";
+  str2.cfee=12000;
+
+  let str3=new course2();
+  str3.cid=3;
+  str3.cname="PYTHON";
+  str3.cduration="6 hrs";
+  str3.cfee=9000;
+
+  let str4=new course2();
+  str4.cid=4;
+  str4.cname="JSCRIPT";
+  str4.cduration="5 hrs";
+  str4.cfee=8000;
+  this.arr1=new Array();
+  this.arr1.push(str1);
+  this.arr1.push(str2);
+  this.arr1.push(str3);
+  this.arr1.push(str4);
+}
+
+}
+class course2
+{
+  cid:number;
+  cname:string;
+  cduration:string;
+  cfee:number;
+}

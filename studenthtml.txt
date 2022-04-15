@@ -1,0 +1,19 @@
+<p>student2 works!</p>
+
+<button (click)="display()"> Student details</button>
+<table *ngIf="arr1" border="2px" cellpadding="15px" style="background-color: cadetblue;">
+<tr>
+    <th>Student Regno</th>
+    <th>Student name</th>
+    <th>Student cid</th>
+    <th>Student edu</th>
+</tr>
+<tr *ngFor="let i of arr1">
+    <td>{{i.sregno}}</td>
+    <td>{{i.sname}}</td>
+    <td>{{i.cid}}</td>
+    <td>{{i.sedu}}</td>
+
+</tr>
+
+</table>
